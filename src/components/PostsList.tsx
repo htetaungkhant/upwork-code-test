@@ -113,7 +113,7 @@ export default function PostsList() {
             ? "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6" 
             : "flex flex-col gap-4"
         }`}>
-          {posts?.map((post, index) => (
+          {posts?.map((post) => (
             <Card 
               key={post.id} 
               className={`group relative overflow-hidden transition-all duration-300 border-border/50 hover:border-indigo-500/30 hover:shadow-lg hover:shadow-indigo-500/10 ${

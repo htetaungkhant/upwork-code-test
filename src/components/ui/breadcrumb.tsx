@@ -14,7 +14,7 @@ function Breadcrumb({
   )
 }
 
-interface BreadcrumbListProps extends React.OlHTMLAttributes<HTMLOListElement> {}
+type BreadcrumbListProps = React.OlHTMLAttributes<HTMLOListElement>
 
 const BreadcrumbList = React.forwardRef<HTMLOListElement, BreadcrumbListProps>(
   ({ className, ...props }, ref) => (
